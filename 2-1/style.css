@@ -1,0 +1,97 @@
+.clearfix::after { 
+    content: '';
+    display: block; 
+    clear: both;
+}
+
+.header{
+    width: 400px;
+    height: 100px;
+    background-color: red;
+}
+
+/*.main{
+    width: 400px;
+    height: 100px;
+    background-color: blue;
+}*/
+
+.left{
+    width: 150px;
+    height: 250px;
+    background-color: green;
+    float: none;
+}
+
+.right{
+    width: 250px;
+    height: 250px;
+    background-color: pink;
+    float: left;
+}
+
+.footer{
+    width: 400px;
+    height: 100px;
+    background-color: yellow;
+}
+
+/*ウィンドウ幅が最大767pxまでの場合に適用(タブレット用)*/
+@media screen and (max-width: 767px) {
+
+    #wrapper {
+        width: 80%;
+    }
+
+    .header {
+        width: 250px;
+    }
+   
+    .right {
+        width: 100px;
+    }
+
+    .footer {
+        width: 250px;
+    }
+}
+
+/*ウィンドウ幅が最大479pxまでの場合に適用(スマホ用)*/
+@media screen and (max-width: 479px) {
+
+    .header {
+        width: 150px;
+    }
+   
+    .right {
+        float: none;
+        width: 150px;
+    }
+
+    .footer {
+        float: none;
+        width: 150px;
+    }
+}
+
+/*ウィンドウ幅が最大479pxまでの場合に適用(タブレット用)*/
+@media screen and (max-width: 479px) {
+
+    .header {
+        width: 400px;
+    }
+
+    .left {
+        width: 200px;
+        height: 500px;
+    }
+
+   
+    .right {
+        width: 50%;
+    }
+
+    .footer {
+        width: 110px;
+    }
+}
